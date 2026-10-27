@@ -1,0 +1,75 @@
+body {
+    background-color: #3b4c76;
+}
+
+/* Muda a cor, tipo e tamanho de fonte, centraliza o texto e adiciona sombra */
+h1 {
+    color: #29b0b0c4;
+    font-family: "Oswald", sans-serif;
+    font-size: 36px;
+    text-align: center;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+h2 {
+    color: #29b0b0c4;
+    font-family: "Oswald", sans-serif;
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 30px;
+    margin: 10px;
+}
+
+h3 {
+    color: #278f8fc4;
+    font-family: "Oswald", sans-serif;
+    margin: 18px;
+}
+
+p {
+    margin: 10px;
+}
+
+p, li {
+    color: rgb(122, 200, 221);
+}
+
+/* deixa o parágrafo de id exceção em negrito */
+#exceção {
+    font-weight: bold;
+}
+
+.lista {
+    font-weight: bold;
+
+}
+
+/* os parágrafos que vem depois de h1 vão ficar com estilo itálico */
+h1 ~ p {
+    font-style: italic;
+    text-align: center;
+    font-size: 17px;
+}
+
+img {
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(179, 37, 163);
+    border-radius: 8px; 
+}
+
+li {
+    padding: 10px;
+}
+
+section {
+    margin: 10px;
+    border: 5px solid rgb(179, 37, 163);
+    border-radius: 8px;
+}
+
+/* Muda a cor do link e deixa em negrito */
+a {
+    color: #807fc8;
+    font-weight: bold;
+
+}
