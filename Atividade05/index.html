@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+
+    <style>
+        h1 {
+            text-align: center;
+            color: rgb(20, 41, 111);
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 400px;
+            padding: 20px;
+        }
+
+        #formulario {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            border: solid;
+            border-radius: 15px;
+            background-color: rgb(20, 41, 111);
+            color: white;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: rgb(11, 96, 170);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: rgb(16, 131, 232);
+        }
+
+        input:focus,
+        textarea:focus,
+        select:focus {
+            border-color: rgb(80, 80, 89);
+            border-width: 2px;
+        }
+
+        @media (max-width: 600px) {
+
+            form {
+                width: 90%;
+                padding: 15px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h1>Passe suas informações</h1>
+        <div id="formulario">
+            <form>
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu email">
+
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" name="senha" placeholder="Digite sua senha">
+
+                <label for="dataDeNascimento">Data de nascimento</label>
+                <input type="date" id="dataDeNascimento" name="dataDeNascimento">
+
+                <label for="curso">Curso:</label>
+                <select id="curso" name="curso">
+                    <option value="">Selecione</option>
+                    <option value="ensw">Engenharia de Software</option>
+                    <option value="ads">Análise e Desenvolvimento de Sistemas</option>
+                    <option value="cc">Ciência da Computação</option>
+                </select>
+
+                <label for="genero">Gênero</label>
+                <select id="genero" name="genero">
+                    <option value="">Selecione</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                    <option value="outro">Outro</option>
+                    <option value="pnr">Prefiro não responder</option>
+                </select>
+
+                <label for="interesses">Interesses</label>
+                <textarea id="interesses" name="interesses" rows="5" cols="30"
+                    placeholder="Digite nesse campo seus interesses"></textarea>
+
+                <label for="comentario">Comentário</label>
+                <textarea id="comentarios" name="comentarios" rows="5" cols="30"
+                    placeholder="Deixe aqui um comentário"></textarea>
+
+
+                <label for="imagem">Faça o upload da imagem</label>
+                <input type="file" id="imagem" name="imagem">
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+
+</body>
+
+</html>
